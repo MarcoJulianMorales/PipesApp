@@ -4,16 +4,16 @@
 
 <div class="grid ">
     <div class="col-12 md:col-4">
-        <p-card header="uppercase">{{nameLowerCase | uppercase}}</p-card>
+        <p-card header="UpperCase">{{nameLowerCase | uppercase}}</p-card>
     </div>
     <div class="col-12 md:col-4">
-        <p-card header="lowercase">{{nameUpperCase | lowercase}}</p-card>
+        <p-card header="LowerCase">{{nameUpperCase | lowercase}}</p-card>
     </div>
     <div class="col-12 md:col-4">
-        <p-card header="titlecase">{{fullName | titlecase}}</p-card>
+        <p-card header="TitleCase">{{fullName | titlecase}}</p-card>
     </div>
     <div class="col-12 md:col-6">
-        <p-card header="date">
+        <p-card header="Date">
             <ol>
                 <li>Date</li>
                 <li>Date | date</li>
@@ -26,11 +26,13 @@
             <ol>
                 <li>Date | date: 'long': 'GMT-6'</li>
                 <li>Date | date: 'long': 'GMT-4'</li>
+                <li>Date | date: 'long': '': 'es-MX'</li>
+                <li>Date | date: 'long': '': 'fr-CA'</li>
             </ol>
         </p-card>
     </div>
     <div class="col-12 md:col-6">
-        <p-card header="date">
+        <p-card header="Date">
             <ol>
                 <li>{{customDate}}</li>
                 <li>{{customDate | date}}</li>
@@ -43,6 +45,8 @@
             <ol>
                 <li>{{customDate | date:'long': 'GMT-7'}}</li>
                 <li>{{customDate | date:'long': 'GMT-6'}}</li>
+                <li>{{customDate | date:'long': '': 'es-MX'}}</li>
+                <li>{{customDate | date:'long': '': 'fr-CA'}}</li>
             </ol>
         </p-card>
     </div>
